@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+    --cor-principal: rgb(138, 5, 190);
+    --cor-secundaria: #F5F5F5;
+    --cor-buttons: #121212;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: var(--cor-principal);
+    font-family: 'Roboto Mono', monospace;
+}
+
+ul {
+    list-style: none;
+    padding: 2em;
+    background: var(--cor-secundaria);
+    border-radius: 10px;
+    box-shadow: #00000047 0px 3px 3px 0px;
+}
+
+li {
+    padding: 2px;
+    margin: 2px;
+    color: var(--cor-buttons);
+}
+
+.title {
+    color: var(--cor-secundaria);
+}
+
+button {
+    color: var(--cor-buttons);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    align-content: center;
+}
+
+button.actions {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+    opacity: 0.6;
+    transition: opacity 1s;
+}
+
+button.actions:hover {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+label {
+    color: var(--cor-secundaria);;
+}
+
+input {
+    outline: none;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background: var(--cor-secundaria);
+    font-size: 15px;
+    color: var(--cor-buttons);
+}
+
+input::placeholder {
+    color: var(--cor-buttons);
+}
